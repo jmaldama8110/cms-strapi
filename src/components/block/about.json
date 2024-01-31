@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_block_abouts",
+  "info": {
+    "displayName": "TeamAndCompany",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pageBreadcrumb": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.page-breacrumb"
+    },
+    "headingText": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.team-member"
+    },
+    "valuesTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    },
+    "valuesDescription": {
+      "type": "string"
+    },
+    "valuesParagraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.paragraph"
+    },
+    "ctaSubtitle": {
+      "type": "string"
+    },
+    "ctaButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    },
+    "ctaTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "ctaDescription": {
+      "type": "string"
+    }
+  }
+}

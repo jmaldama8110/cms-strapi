@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "metaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.meta-info"
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.menu"
+    },
+    "backgroundSlides": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.slider"
+    },
+    "introSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.intro"
+    },
+    "teamCompanySection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.about"
+    },
+    "caseStudiesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.case-studies"
+    },
+    "servicesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.services"
+    },
+    "blogSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.blog"
+    },
+    "contactSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.contac"
+    },
+    "footerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.footer"
+    }
+  }
+}

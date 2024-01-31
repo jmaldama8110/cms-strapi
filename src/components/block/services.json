@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_block_services",
+  "info": {
+    "displayName": "Services",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headingTitle": {
+      "type": "string"
+    },
+    "pageBreadcrumb": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.page-breacrumb"
+    },
+    "ctaDescription": {
+      "type": "string"
+    },
+    "ctaButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "headingSubtitle": {
+      "type": "string"
+    },
+    "subtitleDescription": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.paragraph"
+    },
+    "footNote": {
+      "type": "string"
+    },
+    "footNoteDescription": {
+      "type": "string"
+    },
+    "footNoteHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "footNoteIconList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.icon-item"
+    },
+    "footNoteCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    }
+  }
+}

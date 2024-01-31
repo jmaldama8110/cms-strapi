@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_blog_post_items",
+  "info": {
+    "displayName": "Blog Post Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "selfi": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

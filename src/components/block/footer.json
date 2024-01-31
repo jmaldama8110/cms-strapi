@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_block_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "orionBrief": {
+      "type": "string"
+    },
+    "joinTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "joinDescription": {
+      "type": "string"
+    },
+    "emailInputPlaceholder": {
+      "type": "string"
+    },
+    "joinButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    },
+    "socialList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.menu-item"
+    },
+    "termsconditionList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.menu-item"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "copyrightAuthor": {
+      "type": "string"
+    },
+    "playstoreButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.app-store-button"
+    },
+    "appstoreButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.app-store-button"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_element_page_breacrumbs",
+  "info": {
+    "displayName": "pageBreacrumb"
+  },
+  "options": {},
+  "attributes": {
+    "textLeft": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "sectionName": {
+      "type": "string"
+    }
+  }
+}

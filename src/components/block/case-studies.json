@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_block_case_studies",
+  "info": {
+    "displayName": "Case Studies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pageBreadcrumb": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.page-breacrumb"
+    },
+    "headingText": {
+      "type": "string"
+    },
+    "cases": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.case"
+    }
+  }
+}

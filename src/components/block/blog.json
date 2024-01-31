@@ -1,0 +1,82 @@
+{
+  "collectionName": "components_block_blogs",
+  "info": {
+    "displayName": "Blog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headingTitle": {
+      "type": "string"
+    },
+    "pageBreadcrumb": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.page-breacrumb"
+    },
+    "noteTitle": {
+      "type": "string"
+    },
+    "noteDescription": {
+      "type": "string"
+    },
+    "noteSelfi": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "noteName": {
+      "type": "string"
+    },
+    "notePosition": {
+      "type": "string"
+    },
+    "searchInputPlaceholder": {
+      "type": "string"
+    },
+    "recentPostTitle": {
+      "type": "string"
+    },
+    "bulletListTitle": {
+      "type": "string"
+    },
+    "bullets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.icon-item"
+    },
+    "tagsTitle": {
+      "type": "string"
+    },
+    "tagList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.icon-item"
+    },
+    "newsletterTitle": {
+      "type": "string"
+    },
+    "emailInputPlaceholder": {
+      "type": "string"
+    },
+    "contactUsTitle": {
+      "type": "string"
+    },
+    "contactUsDescription": {
+      "type": "string"
+    },
+    "contactUsButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.more-button"
+    },
+    "entries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.blog-entry"
+    }
+  }
+}

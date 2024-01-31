@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_blocks_contacs",
+  "info": {
+    "displayName": "Contact",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nameInputLabel": {
+      "type": "string"
+    },
+    "emailInputLabel": {
+      "type": "string"
+    },
+    "phoneInputLabel": {
+      "type": "string"
+    },
+    "messageInputLabel": {
+      "type": "string"
+    },
+    "attachYouFileInputLabel": {
+      "type": "string"
+    },
+    "footNote1": {
+      "type": "string"
+    },
+    "footNote2": {
+      "type": "string"
+    },
+    "footNoteColored": {
+      "type": "string"
+    },
+    "requiredLabel": {
+      "type": "string"
+    },
+    "contactButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    },
+    "headingTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    },
+    "optionalLabel": {
+      "type": "string"
+    },
+    "filesizeLabel": {
+      "type": "string"
+    }
+  }
+}

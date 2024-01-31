@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_three_color_texts",
+  "info": {
+    "displayName": "threeColorText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "leftText": {
+      "type": "string"
+    },
+    "centerText": {
+      "type": "string"
+    },
+    "rightText": {
+      "type": "string"
+    }
+  }
+}

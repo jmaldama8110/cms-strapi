@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_element_two_color_titles",
+  "info": {
+    "displayName": "Two Color Title"
+  },
+  "options": {},
+  "attributes": {
+    "textLeft": {
+      "type": "string"
+    },
+    "textRight": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_element_blog_entries",
+  "info": {
+    "displayName": "Blog Entry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "finance",
+        "design",
+        "marketing",
+        "learning"
+      ]
+    },
+    "dateIssued": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_block_intros",
+  "info": {
+    "displayName": "Intro",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "largeTitle": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "twoColorTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    },
+    "floatingWords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.floating-word"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.button"
+    },
+    "ctaDescrition": {
+      "type": "text"
+    }
+  }
+}
