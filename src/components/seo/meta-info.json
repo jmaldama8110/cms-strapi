@@ -1,7 +1,8 @@
 {
   "collectionName": "components_seo_meta_infos",
   "info": {
-    "displayName": "Meta Info"
+    "displayName": "Meta Info",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,12 +12,8 @@
     "metaDescription": {
       "type": "text"
     },
-    "metaImage": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "logoUrl": {
+      "type": "string"
     }
   }
 }

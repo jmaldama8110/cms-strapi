@@ -12,18 +12,13 @@
     "subtitle": {
       "type": "string"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "buttonLabel": {
       "type": "string"
     },
     "buttonUrl": {
+      "type": "string"
+    },
+    "imageUrl": {
       "type": "string"
     }
   }

@@ -32,7 +32,6 @@ export interface BlockBlog extends Schema.Component {
     pageBreadcrumb: Attribute.Component<'element.page-breacrumb'>;
     noteTitle: Attribute.String;
     noteDescription: Attribute.String;
-    noteSelfi: Attribute.Media;
     noteName: Attribute.String;
     notePosition: Attribute.String;
     searchInputPlaceholder: Attribute.String;
@@ -47,6 +46,7 @@ export interface BlockBlog extends Schema.Component {
     contactUsDescription: Attribute.String;
     contactUsButton: Attribute.Component<'element.more-button'>;
     entries: Attribute.Component<'element.blog-entry', true>;
+    noteSelfiUrl: Attribute.String;
   };
 }
 
@@ -170,8 +170,8 @@ export interface ElementBlogEntry extends Schema.Component {
       ['finance', 'design', 'marketing', 'learning']
     >;
     dateIssued: Attribute.String;
-    image: Attribute.Media;
     description: Attribute.Text;
+    imageUrl: Attribute.String;
   };
 }
 
@@ -183,7 +183,7 @@ export interface ElementBlogPostItem extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    selfi: Attribute.Media;
+    selfiUrl: Attribute.String;
   };
 }
 
@@ -207,9 +207,9 @@ export interface ElementCase extends Schema.Component {
   attributes: {
     title: Attribute.String;
     subtitle: Attribute.String;
-    image: Attribute.Media;
     buttonLabel: Attribute.String;
     buttonUrl: Attribute.String;
+    imageUrl: Attribute.String;
   };
 }
 
@@ -233,7 +233,7 @@ export interface ElementIconItem extends Schema.Component {
   };
   attributes: {
     label: Attribute.String;
-    iconImg: Attribute.Media;
+    iconUrl: Attribute.String;
   };
 }
 
@@ -300,11 +300,12 @@ export interface ElementSlideImage extends Schema.Component {
   collectionName: 'components_element_slide_images';
   info: {
     displayName: 'slideImage';
+    description: '';
   };
   attributes: {
-    image: Attribute.Media;
     description: Attribute.String;
     order: Attribute.Integer;
+    imageUrl: Attribute.String;
   };
 }
 
@@ -328,7 +329,7 @@ export interface ElementTeamMember extends Schema.Component {
   attributes: {
     name: Attribute.String;
     position: Attribute.String;
-    selfi: Attribute.Media;
+    selfiUrl: Attribute.String;
   };
 }
 
@@ -360,11 +361,12 @@ export interface SeoMetaInfo extends Schema.Component {
   collectionName: 'components_seo_meta_infos';
   info: {
     displayName: 'Meta Info';
+    description: '';
   };
   attributes: {
     metaTitle: Attribute.String;
     metaDescription: Attribute.Text;
-    metaImage: Attribute.Media;
+    logoUrl: Attribute.String;
   };
 }
 

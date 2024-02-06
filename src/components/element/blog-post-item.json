@@ -9,13 +9,8 @@
     "title": {
       "type": "string"
     },
-    "selfi": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "selfiUrl": {
+      "type": "string"
     }
   }
 }
