@@ -1,22 +1,19 @@
 {
   "collectionName": "components_element_slide_images",
   "info": {
-    "displayName": "slideImage"
+    "displayName": "slideImage",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "description": {
       "type": "string"
     },
     "order": {
       "type": "integer"
+    },
+    "imageUrl": {
+      "type": "string"
     }
   }
 }

@@ -21,16 +21,11 @@
     "dateIssued": {
       "type": "string"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "description": {
       "type": "text"
+    },
+    "imageUrl": {
+      "type": "string"
     }
   }
 }

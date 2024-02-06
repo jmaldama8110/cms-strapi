@@ -9,13 +9,8 @@
     "label": {
       "type": "string"
     },
-    "iconImg": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "iconUrl": {
+      "type": "string"
     }
   }
 }
