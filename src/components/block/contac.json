@@ -48,6 +48,12 @@
     },
     "filesizeLabel": {
       "type": "string"
+    },
+    "messageSentOk": {
+      "type": "string"
+    },
+    "messageSentError": {
+      "type": "string"
     }
   }
 }

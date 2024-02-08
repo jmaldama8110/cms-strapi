@@ -83,6 +83,8 @@ export interface BlockContac extends Schema.Component {
     headingTitle: Attribute.Component<'element.two-color-title'>;
     optionalLabel: Attribute.String;
     filesizeLabel: Attribute.String;
+    messageSentOk: Attribute.String;
+    messageSentError: Attribute.String;
   };
 }
 
