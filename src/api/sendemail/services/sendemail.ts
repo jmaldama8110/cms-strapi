@@ -1,0 +1,5 @@
+/**
+ * sendemail service
+ */
+
+export default () => ({});
