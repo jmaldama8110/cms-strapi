@@ -21,6 +21,17 @@ export interface BlockAbout extends Schema.Component {
   };
 }
 
+export interface BlockBenefitsSection extends Schema.Component {
+  collectionName: 'components_block_benefits_sections';
+  info: {
+    displayName: 'benefitsSection';
+  };
+  attributes: {
+    benefitsList: Attribute.Component<'element.paragraph', true>;
+    title: Attribute.Component<'element.two-color-title'>;
+  };
+}
+
 export interface BlockBlog extends Schema.Component {
   collectionName: 'components_block_blogs';
   info: {
@@ -88,6 +99,32 @@ export interface BlockContac extends Schema.Component {
   };
 }
 
+export interface BlockFaqSection extends Schema.Component {
+  collectionName: 'components_block_faq_sections';
+  info: {
+    displayName: 'FaqSection';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.Component<'element.two-color-title'>;
+    paragraphTitle: Attribute.Component<'element.two-color-title'>;
+    description: Attribute.Text;
+    faqList: Attribute.Component<'element.faq', true>;
+  };
+}
+
+export interface BlockFeaturesSection extends Schema.Component {
+  collectionName: 'components_block_features_sections';
+  info: {
+    displayName: 'featuresSection';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.Component<'element.two-color-title'>;
+    featuresList: Attribute.Component<'element.paragraph', true>;
+  };
+}
+
 export interface BlockFooter extends Schema.Component {
   collectionName: 'components_block_footers';
   info: {
@@ -125,6 +162,23 @@ export interface BlockIntro extends Schema.Component {
   };
 }
 
+export interface BlockPainAgitationSection extends Schema.Component {
+  collectionName: 'components_block_pain_agitation_sections';
+  info: {
+    displayName: 'PainAgitationSection';
+    description: '';
+  };
+  attributes: {
+    subjectBullet: Attribute.String;
+    paragrap01: Attribute.Component<'element.three-color-text'>;
+    paragrap02: Attribute.Component<'element.three-color-text'>;
+    paragrap03: Attribute.Component<'element.three-color-text'>;
+    paragrap04: Attribute.Component<'element.three-color-text'>;
+    videoUrl: Attribute.String;
+    title: Attribute.Component<'element.two-color-title'>;
+  };
+}
+
 export interface BlockServices extends Schema.Component {
   collectionName: 'components_block_services';
   info: {
@@ -145,6 +199,17 @@ export interface BlockServices extends Schema.Component {
     footNoteHeading: Attribute.Component<'element.three-color-text'>;
     footNoteIconList: Attribute.Component<'element.icon-item', true>;
     footNoteCta: Attribute.Component<'element.button'>;
+  };
+}
+
+export interface BlockTestimonialSection extends Schema.Component {
+  collectionName: 'components_block_testimonial_sections';
+  info: {
+    displayName: 'testimonialSection';
+  };
+  attributes: {
+    title: Attribute.Component<'element.two-color-title'>;
+    testimonialsList: Attribute.Component<'element.testimonial', true>;
   };
 }
 
@@ -212,6 +277,18 @@ export interface ElementCase extends Schema.Component {
     buttonLabel: Attribute.String;
     buttonUrl: Attribute.String;
     imageUrl: Attribute.String;
+  };
+}
+
+export interface ElementFaq extends Schema.Component {
+  collectionName: 'components_element_faqs';
+  info: {
+    displayName: 'faq';
+  };
+  attributes: {
+    question: Attribute.String;
+    description: Attribute.Text;
+    videoUrl: Attribute.String;
   };
 }
 
@@ -295,6 +372,7 @@ export interface ElementParagraph extends Schema.Component {
   attributes: {
     title: Attribute.String;
     description: Attribute.String;
+    iconUrl: Attribute.String;
   };
 }
 
@@ -335,6 +413,19 @@ export interface ElementTeamMember extends Schema.Component {
   };
 }
 
+export interface ElementTestimonial extends Schema.Component {
+  collectionName: 'components_element_testimonials';
+  info: {
+    displayName: 'testimonial';
+  };
+  attributes: {
+    quote: Attribute.Text;
+    selfiUrl: Attribute.String;
+    displayName: Attribute.String;
+    position: Attribute.String;
+  };
+}
+
 export interface ElementThreeColorText extends Schema.Component {
   collectionName: 'components_elements_three_color_texts';
   info: {
@@ -342,9 +433,9 @@ export interface ElementThreeColorText extends Schema.Component {
     description: '';
   };
   attributes: {
-    leftText: Attribute.String;
-    centerText: Attribute.String;
-    rightText: Attribute.String;
+    leftText: Attribute.Text;
+    centerText: Attribute.Text;
+    rightText: Attribute.Text;
   };
 }
 
@@ -376,17 +467,23 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'block.about': BlockAbout;
+      'block.benefits-section': BlockBenefitsSection;
       'block.blog': BlockBlog;
       'block.case-studies': BlockCaseStudies;
       'block.contac': BlockContac;
+      'block.faq-section': BlockFaqSection;
+      'block.features-section': BlockFeaturesSection;
       'block.footer': BlockFooter;
       'block.intro': BlockIntro;
+      'block.pain-agitation-section': BlockPainAgitationSection;
       'block.services': BlockServices;
+      'block.testimonial-section': BlockTestimonialSection;
       'element.app-store-button': ElementAppStoreButton;
       'element.blog-entry': ElementBlogEntry;
       'element.blog-post-item': ElementBlogPostItem;
       'element.button': ElementButton;
       'element.case': ElementCase;
+      'element.faq': ElementFaq;
       'element.floating-word': ElementFloatingWord;
       'element.icon-item': ElementIconItem;
       'element.menu-item': ElementMenuItem;
@@ -397,6 +494,7 @@ declare module '@strapi/types' {
       'element.slide-image': ElementSlideImage;
       'element.slider': ElementSlider;
       'element.team-member': ElementTeamMember;
+      'element.testimonial': ElementTestimonial;
       'element.three-color-text': ElementThreeColorText;
       'element.two-color-title': ElementTwoColorTitle;
       'seo.meta-info': SeoMetaInfo;

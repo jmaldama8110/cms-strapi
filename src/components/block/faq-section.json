@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_block_faq_sections",
+  "info": {
+    "displayName": "FaqSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    },
+    "paragraphTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    },
+    "description": {
+      "type": "text"
+    },
+    "faqList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.faq"
+    }
+  }
+}

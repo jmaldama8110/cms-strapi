@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_element_testimonials",
+  "info": {
+    "displayName": "testimonial"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "selfiUrl": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

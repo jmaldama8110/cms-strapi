@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_block_pain_agitation_sections",
+  "info": {
+    "displayName": "PainAgitationSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subjectBullet": {
+      "type": "string"
+    },
+    "paragrap01": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "paragrap02": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "paragrap03": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "paragrap04": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    }
+  }
+}

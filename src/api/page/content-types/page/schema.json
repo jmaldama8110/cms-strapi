@@ -71,6 +71,31 @@
       "type": "component",
       "repeatable": false,
       "component": "block.footer"
+    },
+    "painAgitationSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.pain-agitation-section"
+    },
+    "benefitsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.benefits-section"
+    },
+    "testimonialSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.testimonial-section"
+    },
+    "featuresSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.features-section"
+    },
+    "faqSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.faq-section"
     }
   }
 }

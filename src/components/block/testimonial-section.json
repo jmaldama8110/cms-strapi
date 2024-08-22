@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_block_testimonial_sections",
+  "info": {
+    "displayName": "testimonialSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    },
+    "testimonialsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.testimonial"
+    }
+  }
+}

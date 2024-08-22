@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landpages",
+  "info": {
+    "singularName": "landpage",
+    "pluralName": "landpages",
+    "displayName": "Landpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "signInText": {
+      "type": "string"
+    },
+    "everyMinute": {
+      "type": "integer"
+    },
+    "whatLearnTitle": {
+      "type": "string"
+    },
+    "whoWithLearnTitle": {
+      "type": "string"
+    },
+    "benefit01": {
+      "type": "string"
+    },
+    "benefit02": {
+      "type": "string"
+    },
+    "benefit03": {
+      "type": "string"
+    },
+    "benefit04": {
+      "type": "string"
+    },
+    "benefit05": {
+      "type": "string"
+    },
+    "benefit06": {
+      "type": "string"
+    },
+    "selfi": {
+      "type": "string"
+    },
+    "teacherName": {
+      "type": "string"
+    },
+    "teacherDescription": {
+      "type": "text"
+    },
+    "contentId": {
+      "type": "integer"
+    }
+  }
+}

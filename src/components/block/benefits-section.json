@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_block_benefits_sections",
+  "info": {
+    "displayName": "benefitsSection"
+  },
+  "options": {},
+  "attributes": {
+    "benefitsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.paragraph"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.two-color-title"
+    }
+  }
+}

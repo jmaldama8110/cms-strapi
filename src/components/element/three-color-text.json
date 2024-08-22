@@ -7,13 +7,13 @@
   "options": {},
   "attributes": {
     "leftText": {
-      "type": "string"
+      "type": "text"
     },
     "centerText": {
-      "type": "string"
+      "type": "text"
     },
     "rightText": {
-      "type": "string"
+      "type": "text"
     }
   }
 }
