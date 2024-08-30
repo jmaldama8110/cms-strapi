@@ -460,6 +460,7 @@ export interface SeoMetaInfo extends Schema.Component {
     metaTitle: Attribute.String;
     metaDescription: Attribute.Text;
     logoUrl: Attribute.String;
+    demoVideoUrl: Attribute.String;
   };
 }
 
