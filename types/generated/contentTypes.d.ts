@@ -863,6 +863,7 @@ export interface ApiLandpageLandpage extends Schema.CollectionType {
     teacherName: Attribute.String;
     teacherDescription: Attribute.Text;
     contentId: Attribute.Integer;
+    backgroundImage: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

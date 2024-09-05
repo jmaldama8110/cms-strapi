@@ -59,6 +59,9 @@
     },
     "contentId": {
       "type": "integer"
+    },
+    "backgroundImage": {
+      "type": "string"
     }
   }
 }
