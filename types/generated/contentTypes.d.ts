@@ -822,6 +822,7 @@ export interface ApiEventEvent extends Schema.CollectionType {
     datetime: Attribute.String;
     fullname: Attribute.String;
     email: Attribute.String;
+    phone: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
