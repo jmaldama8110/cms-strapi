@@ -20,6 +20,27 @@
     },
     "mainVideoUrl": {
       "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "ctaTitle": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "ctaFinalMessage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.three-color-text"
+    },
+    "ctaFinalText": {
+      "type": "string"
+    },
+    "plans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.price-plan"
     }
   }
 }

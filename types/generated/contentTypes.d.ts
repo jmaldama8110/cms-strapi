@@ -783,6 +783,11 @@ export interface ApiContentContent extends Schema.CollectionType {
     title: Attribute.String;
     introVideoUrl: Attribute.String;
     mainVideoUrl: Attribute.String;
+    duration: Attribute.Integer;
+    ctaTitle: Attribute.Component<'element.three-color-text'>;
+    ctaFinalMessage: Attribute.Component<'element.three-color-text'>;
+    ctaFinalText: Attribute.String;
+    plans: Attribute.Component<'element.price-plan', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

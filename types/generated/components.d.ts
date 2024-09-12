@@ -292,6 +292,18 @@ export interface ElementFaq extends Schema.Component {
   };
 }
 
+export interface ElementFeatureItemPlan extends Schema.Component {
+  collectionName: 'components_element_feature_item_plans';
+  info: {
+    displayName: 'featureItemPlan';
+  };
+  attributes: {
+    description: Attribute.String;
+    strike: Attribute.Boolean;
+    order: Attribute.Integer;
+  };
+}
+
 export interface ElementFloatingWord extends Schema.Component {
   collectionName: 'components_element_floating_words';
   info: {
@@ -373,6 +385,35 @@ export interface ElementParagraph extends Schema.Component {
     title: Attribute.String;
     description: Attribute.String;
     iconUrl: Attribute.String;
+  };
+}
+
+export interface ElementPriceItem extends Schema.Component {
+  collectionName: 'components_element_price_items';
+  info: {
+    displayName: 'PriceItem';
+  };
+  attributes: {
+    description: Attribute.String;
+    position: Attribute.Integer;
+    strike: Attribute.Boolean;
+  };
+}
+
+export interface ElementPricePlan extends Schema.Component {
+  collectionName: 'components_element_price_plans';
+  info: {
+    displayName: 'PricePlan';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    price: Attribute.String;
+    frequency: Attribute.String;
+    itemsList: Attribute.Component<'element.price-item', true>;
+    ctaText: Attribute.String;
+    title: Attribute.String;
+    priceNote: Attribute.String;
   };
 }
 
@@ -485,6 +526,7 @@ declare module '@strapi/types' {
       'element.button': ElementButton;
       'element.case': ElementCase;
       'element.faq': ElementFaq;
+      'element.feature-item-plan': ElementFeatureItemPlan;
       'element.floating-word': ElementFloatingWord;
       'element.icon-item': ElementIconItem;
       'element.menu-item': ElementMenuItem;
@@ -492,6 +534,8 @@ declare module '@strapi/types' {
       'element.more-button': ElementMoreButton;
       'element.page-breacrumb': ElementPageBreacrumb;
       'element.paragraph': ElementParagraph;
+      'element.price-item': ElementPriceItem;
+      'element.price-plan': ElementPricePlan;
       'element.slide-image': ElementSlideImage;
       'element.slider': ElementSlider;
       'element.team-member': ElementTeamMember;

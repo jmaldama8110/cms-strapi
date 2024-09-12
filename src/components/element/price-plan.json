@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_element_price_plans",
+  "info": {
+    "displayName": "PricePlan",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "itemsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.price-item"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "priceNote": {
+      "type": "string"
+    }
+  }
+}

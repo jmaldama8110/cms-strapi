@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_element_feature_item_plans",
+  "info": {
+    "displayName": "featureItemPlan"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "strike": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

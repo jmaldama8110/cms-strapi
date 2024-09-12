@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_element_price_items",
+  "info": {
+    "displayName": "PriceItem"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "strike": {
+      "type": "boolean"
+    }
+  }
+}
