@@ -146,6 +146,23 @@ export interface BlockFooter extends Schema.Component {
   };
 }
 
+export interface BlockHeroSection extends Schema.Component {
+  collectionName: 'components_block_hero_sections';
+  info: {
+    displayName: 'heroSection';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.Component<'element.three-color-text'>;
+    subtitle: Attribute.String;
+    ctaNote: Attribute.String;
+    ctaDescription: Attribute.String;
+    statsList: Attribute.Component<'element.stat', true>;
+    videoUrl: Attribute.String;
+    imageUrl: Attribute.String;
+  };
+}
+
 export interface BlockIntro extends Schema.Component {
   collectionName: 'components_block_intros';
   info: {
@@ -441,6 +458,17 @@ export interface ElementSlider extends Schema.Component {
   };
 }
 
+export interface ElementStat extends Schema.Component {
+  collectionName: 'components_element_stats';
+  info: {
+    displayName: 'Stat';
+  };
+  attributes: {
+    count: Attribute.String;
+    description: Attribute.String;
+  };
+}
+
 export interface ElementTeamMember extends Schema.Component {
   collectionName: 'components_elements_team_members';
   info: {
@@ -516,6 +544,7 @@ declare module '@strapi/types' {
       'block.faq-section': BlockFaqSection;
       'block.features-section': BlockFeaturesSection;
       'block.footer': BlockFooter;
+      'block.hero-section': BlockHeroSection;
       'block.intro': BlockIntro;
       'block.pain-agitation-section': BlockPainAgitationSection;
       'block.services': BlockServices;
@@ -538,6 +567,7 @@ declare module '@strapi/types' {
       'element.price-plan': ElementPricePlan;
       'element.slide-image': ElementSlideImage;
       'element.slider': ElementSlider;
+      'element.stat': ElementStat;
       'element.team-member': ElementTeamMember;
       'element.testimonial': ElementTestimonial;
       'element.three-color-text': ElementThreeColorText;

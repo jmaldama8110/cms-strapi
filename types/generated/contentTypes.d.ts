@@ -870,6 +870,10 @@ export interface ApiLandpageLandpage extends Schema.CollectionType {
     teacherDescription: Attribute.Text;
     contentId: Attribute.Integer;
     backgroundImage: Attribute.String;
+    heroSection: Attribute.Component<'block.hero-section'>;
+    benefitsSection: Attribute.Component<'block.benefits-section'>;
+    testimonialSection: Attribute.Component<'block.testimonial-section'>;
+    faqSection: Attribute.Component<'block.faq-section'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

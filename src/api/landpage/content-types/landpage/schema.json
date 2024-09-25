@@ -62,6 +62,26 @@
     },
     "backgroundImage": {
       "type": "string"
+    },
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.hero-section"
+    },
+    "benefitsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.benefits-section"
+    },
+    "testimonialSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.testimonial-section"
+    },
+    "faqSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.faq-section"
     }
   }
 }
