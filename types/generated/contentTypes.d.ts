@@ -874,6 +874,7 @@ export interface ApiLandpageLandpage extends Schema.CollectionType {
     benefitsSection: Attribute.Component<'block.benefits-section'>;
     testimonialSection: Attribute.Component<'block.testimonial-section'>;
     faqSection: Attribute.Component<'block.faq-section'>;
+    painAgitationSection: Attribute.Component<'block.pain-agitation-section'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
