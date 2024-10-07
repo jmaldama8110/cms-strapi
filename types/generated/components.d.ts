@@ -158,8 +158,6 @@ export interface BlockHeroSection extends Schema.Component {
     ctaNote: Attribute.String;
     ctaDescription: Attribute.String;
     statsList: Attribute.Component<'element.stat', true>;
-    videoUrl: Attribute.String;
-    imageUrl: Attribute.String;
   };
 }
 

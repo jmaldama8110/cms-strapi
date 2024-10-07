@@ -24,12 +24,6 @@
       "type": "component",
       "repeatable": true,
       "component": "element.stat"
-    },
-    "videoUrl": {
-      "type": "string"
-    },
-    "imageUrl": {
-      "type": "string"
     }
   }
 }
