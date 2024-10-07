@@ -82,11 +82,6 @@
       "type": "component",
       "repeatable": false,
       "component": "block.faq-section"
-    },
-    "painAgitationSection": {
-      "type": "component",
-      "repeatable": false,
-      "component": "block.pain-agitation-section"
     }
   }
 }
