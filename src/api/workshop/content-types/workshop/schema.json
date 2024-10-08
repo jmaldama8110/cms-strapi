@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workshops",
+  "info": {
+    "singularName": "workshop",
+    "pluralName": "workshops",
+    "displayName": "Workshop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "signInText": {
+      "type": "string"
+    },
+    "everyMinute": {
+      "type": "integer"
+    },
+    "whatLearnTitle": {
+      "type": "string"
+    },
+    "whoWithLearnTitle": {
+      "type": "string"
+    },
+    "benefit01": {
+      "type": "string"
+    },
+    "benefit02": {
+      "type": "string"
+    },
+    "benefit03": {
+      "type": "string"
+    },
+    "benefit04": {
+      "type": "string"
+    },
+    "benefit05": {
+      "type": "string"
+    },
+    "benefit06": {
+      "type": "string"
+    },
+    "selfi": {
+      "type": "string"
+    },
+    "teacherName": {
+      "type": "string"
+    },
+    "teacherDescription": {
+      "type": "text"
+    },
+    "contentId": {
+      "type": "integer"
+    },
+    "backgroundImage": {
+      "type": "string"
+    },
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.hero-section"
+    },
+    "benefitsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.benefits-section"
+    },
+    "testimonialSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.testimonial-section"
+    },
+    "faqSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.faq-section"
+    },
+    "painAgitationSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.pain-agitation-section"
+    }
+  }
+}

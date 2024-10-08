@@ -933,6 +933,58 @@ export interface ApiPagePage extends Schema.CollectionType {
   };
 }
 
+export interface ApiWorkshopWorkshop extends Schema.CollectionType {
+  collectionName: 'workshops';
+  info: {
+    singularName: 'workshop';
+    pluralName: 'workshops';
+    displayName: 'Workshop';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    subTitle: Attribute.String;
+    signInText: Attribute.String;
+    everyMinute: Attribute.Integer;
+    whatLearnTitle: Attribute.String;
+    whoWithLearnTitle: Attribute.String;
+    benefit01: Attribute.String;
+    benefit02: Attribute.String;
+    benefit03: Attribute.String;
+    benefit04: Attribute.String;
+    benefit05: Attribute.String;
+    benefit06: Attribute.String;
+    selfi: Attribute.String;
+    teacherName: Attribute.String;
+    teacherDescription: Attribute.Text;
+    contentId: Attribute.Integer;
+    backgroundImage: Attribute.String;
+    heroSection: Attribute.Component<'block.hero-section'>;
+    benefitsSection: Attribute.Component<'block.benefits-section'>;
+    testimonialSection: Attribute.Component<'block.testimonial-section'>;
+    faqSection: Attribute.Component<'block.faq-section'>;
+    painAgitationSection: Attribute.Component<'block.pain-agitation-section'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::workshop.workshop',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::workshop.workshop',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -955,6 +1007,7 @@ declare module '@strapi/types' {
       'api::event.event': ApiEventEvent;
       'api::landpage.landpage': ApiLandpageLandpage;
       'api::page.page': ApiPagePage;
+      'api::workshop.workshop': ApiWorkshopWorkshop;
     }
   }
 }
