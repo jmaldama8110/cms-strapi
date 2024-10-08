@@ -841,58 +841,6 @@ export interface ApiEventEvent extends Schema.CollectionType {
   };
 }
 
-export interface ApiLandpageLandpage extends Schema.CollectionType {
-  collectionName: 'landpages';
-  info: {
-    singularName: 'landpage';
-    pluralName: 'landpages';
-    displayName: 'Landpage';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    title: Attribute.String;
-    subTitle: Attribute.String;
-    signInText: Attribute.String;
-    everyMinute: Attribute.Integer;
-    whatLearnTitle: Attribute.String;
-    whoWithLearnTitle: Attribute.String;
-    benefit01: Attribute.String;
-    benefit02: Attribute.String;
-    benefit03: Attribute.String;
-    benefit04: Attribute.String;
-    benefit05: Attribute.String;
-    benefit06: Attribute.String;
-    selfi: Attribute.String;
-    teacherName: Attribute.String;
-    teacherDescription: Attribute.Text;
-    contentId: Attribute.Integer;
-    backgroundImage: Attribute.String;
-    heroSection: Attribute.Component<'block.hero-section'>;
-    benefitsSection: Attribute.Component<'block.benefits-section'>;
-    testimonialSection: Attribute.Component<'block.testimonial-section'>;
-    faqSection: Attribute.Component<'block.faq-section'>;
-    painAgitationSection: Attribute.Component<'block.pain-agitation-section'>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::landpage.landpage',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::landpage.landpage',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiPagePage extends Schema.CollectionType {
   collectionName: 'pages';
   info: {
@@ -1005,7 +953,6 @@ declare module '@strapi/types' {
       'plugin::i18n.locale': PluginI18NLocale;
       'api::content.content': ApiContentContent;
       'api::event.event': ApiEventEvent;
-      'api::landpage.landpage': ApiLandpageLandpage;
       'api::page.page': ApiPagePage;
       'api::workshop.workshop': ApiWorkshopWorkshop;
     }
