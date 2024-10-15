@@ -273,10 +273,12 @@ export interface ElementButton extends Schema.Component {
   collectionName: 'components_element_buttons';
   info: {
     displayName: 'Button';
+    description: '';
   };
   attributes: {
     label: Attribute.String;
     style: Attribute.Enumeration<['primary', 'secondary']>;
+    actionUrl: Attribute.String;
   };
 }
 
@@ -360,9 +362,11 @@ export interface ElementMenu extends Schema.Component {
   collectionName: 'components_element_menus';
   info: {
     displayName: 'Menu';
+    description: '';
   };
   attributes: {
     items: Attribute.Component<'element.menu-item', true>;
+    ctaActionButton: Attribute.Component<'element.button'>;
   };
 }
 

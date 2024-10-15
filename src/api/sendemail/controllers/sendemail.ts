@@ -31,6 +31,7 @@ export default {
                     to: [
                     { email: ctx.request.body.email },
                     { email: "jm@orion10x.net" },
+                    { email: "josman.gomez.aldama@gmail.com" },
                     ],
                         dynamic_template_data: {
                             ...ctx.request.body
@@ -45,30 +46,5 @@ export default {
             error: "Something when wrong when trying to send the email"
         };
     }
-  },
-  exampleAction2: async (ctx, next) => {
-        try{
-            /// some data for testing purposes
-            console.log(ctx.request.body)
-            await new Promise(resolve => setTimeout(resolve, 4000));
-            ctx.body = {
-                "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzIyMjE5NjgwLCJleHAiOjE3MjQ4MTE2ODB9.HtBPmBL1CSQemboKcpJ3epma0oCo5eMS5WRGBCTuTAg",
-                "user": {
-                    "id": 3,
-                    "username": "Josman Gmz",
-                    "email": "jm@hotmail.com",
-                    "provider": "local",
-                    "confirmed": true,
-                    "blocked": false,
-                    "createdAt": "2024-07-29T02:21:20.120Z",
-                    "updatedAt": "2024-07-29T02:21:20.120Z"
-                }
-            };
-        }
-        catch(err){
-            ctx.body = {
-                error: "something when wrong"
-            }
-        }
   }
 };
