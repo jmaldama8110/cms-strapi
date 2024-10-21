@@ -143,6 +143,7 @@ export interface BlockFooter extends Schema.Component {
     copyrightAuthor: Attribute.String;
     playstoreButton: Attribute.Component<'element.app-store-button'>;
     appstoreButton: Attribute.Component<'element.app-store-button'>;
+    messageInputPlaceholder: Attribute.String;
   };
 }
 

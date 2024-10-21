@@ -50,6 +50,9 @@
       "type": "component",
       "repeatable": false,
       "component": "element.app-store-button"
+    },
+    "messageInputPlaceholder": {
+      "type": "string"
     }
   }
 }
