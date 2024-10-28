@@ -871,12 +871,56 @@ export interface ApiPagePage extends Schema.CollectionType {
     testimonialSection: Attribute.Component<'block.testimonial-section'>;
     featuresSection: Attribute.Component<'block.features-section'>;
     faqSection: Attribute.Component<'block.faq-section'>;
+    freeSection: Attribute.Component<'block.free-section'>;
+    freeWorkshopsList: Attribute.Component<'block.free-section', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::page.page', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
+export interface ApiPublicationPublication extends Schema.CollectionType {
+  collectionName: 'publications';
+  info: {
+    singularName: 'publication';
+    pluralName: 'publications';
+    displayName: 'Publication';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    subtitle: Attribute.String;
+    author: Attribute.String;
+    datePublished: Attribute.String;
+    readTime: Attribute.String;
+    content: Attribute.Blocks;
+    authorAvatar: Attribute.String;
+    youtubeUrl: Attribute.String;
+    conclusion: Attribute.Blocks;
+    intro: Attribute.Blocks;
+    backgroundImage: Attribute.String;
+    tags: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::publication.publication',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::publication.publication',
+      'oneToOne',
+      'admin::user'
+    > &
       Attribute.Private;
   };
 }
@@ -954,6 +998,7 @@ declare module '@strapi/types' {
       'api::content.content': ApiContentContent;
       'api::event.event': ApiEventEvent;
       'api::page.page': ApiPagePage;
+      'api::publication.publication': ApiPublicationPublication;
       'api::workshop.workshop': ApiWorkshopWorkshop;
     }
   }

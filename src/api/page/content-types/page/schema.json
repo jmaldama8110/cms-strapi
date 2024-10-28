@@ -96,6 +96,16 @@
       "type": "component",
       "repeatable": false,
       "component": "block.faq-section"
+    },
+    "freeSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "block.free-section"
+    },
+    "freeWorkshopsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "block.free-section"
     }
   }
 }

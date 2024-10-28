@@ -26,6 +26,9 @@
     },
     "imageUrl": {
       "type": "string"
+    },
+    "entryId": {
+      "type": "integer"
     }
   }
 }

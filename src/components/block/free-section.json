@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_block_free_sections",
+  "info": {
+    "displayName": "FreeSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cardsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.card-button"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

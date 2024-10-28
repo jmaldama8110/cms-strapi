@@ -147,6 +147,19 @@ export interface BlockFooter extends Schema.Component {
   };
 }
 
+export interface BlockFreeSection extends Schema.Component {
+  collectionName: 'components_block_free_sections';
+  info: {
+    displayName: 'FreeSection';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    cardsList: Attribute.Component<'element.card-button', true>;
+    description: Attribute.Text;
+  };
+}
+
 export interface BlockHeroSection extends Schema.Component {
   collectionName: 'components_block_hero_sections';
   info: {
@@ -255,6 +268,7 @@ export interface ElementBlogEntry extends Schema.Component {
     dateIssued: Attribute.String;
     description: Attribute.Text;
     imageUrl: Attribute.String;
+    entryId: Attribute.Integer;
   };
 }
 
@@ -280,6 +294,20 @@ export interface ElementButton extends Schema.Component {
     label: Attribute.String;
     style: Attribute.Enumeration<['primary', 'secondary']>;
     actionUrl: Attribute.String;
+  };
+}
+
+export interface ElementCardButton extends Schema.Component {
+  collectionName: 'components_element_card_buttons';
+  info: {
+    displayName: 'CardButton';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    actionLabel: Attribute.String;
+    url: Attribute.String;
+    order: Attribute.Integer;
   };
 }
 
@@ -547,6 +575,7 @@ declare module '@strapi/types' {
       'block.faq-section': BlockFaqSection;
       'block.features-section': BlockFeaturesSection;
       'block.footer': BlockFooter;
+      'block.free-section': BlockFreeSection;
       'block.hero-section': BlockHeroSection;
       'block.intro': BlockIntro;
       'block.pain-agitation-section': BlockPainAgitationSection;
@@ -556,6 +585,7 @@ declare module '@strapi/types' {
       'element.blog-entry': ElementBlogEntry;
       'element.blog-post-item': ElementBlogPostItem;
       'element.button': ElementButton;
+      'element.card-button': ElementCardButton;
       'element.case': ElementCase;
       'element.faq': ElementFaq;
       'element.feature-item-plan': ElementFeatureItemPlan;

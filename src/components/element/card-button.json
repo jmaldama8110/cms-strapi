@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_element_card_buttons",
+  "info": {
+    "displayName": "CardButton"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "actionLabel": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
