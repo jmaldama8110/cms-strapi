@@ -26,6 +26,12 @@
     },
     "phone": {
       "type": "string"
+    },
+    "eventId": {
+      "type": "integer"
+    },
+    "company": {
+      "type": "string"
     }
   }
 }

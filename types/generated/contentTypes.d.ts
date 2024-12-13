@@ -823,6 +823,8 @@ export interface ApiEventEvent extends Schema.CollectionType {
     fullname: Attribute.String;
     email: Attribute.String;
     phone: Attribute.String;
+    eventId: Attribute.Integer;
+    company: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -959,6 +961,8 @@ export interface ApiWorkshopWorkshop extends Schema.CollectionType {
     testimonialSection: Attribute.Component<'block.testimonial-section'>;
     faqSection: Attribute.Component<'block.faq-section'>;
     painAgitationSection: Attribute.Component<'block.pain-agitation-section'>;
+    workshopDate: Attribute.DateTime;
+    workshopLocation: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
